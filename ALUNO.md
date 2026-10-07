@@ -2,9 +2,9 @@
 
 # ALUNO
 
-Nome: Leonardo Leitao
+Nome: Leonardo Leitao Souza
 
-RA: >>> PREENCHER <<<
+RA: 230200852
 
 Conta GitHub: @LeoLeitao13
 
