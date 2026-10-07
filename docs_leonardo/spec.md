@@ -8,10 +8,6 @@
 - Todo erro: corpo `{"erro": "<codigo>"}`
 - Ordem das verificações: 422 (formato) → 404 (inexistente) → 409 (conflito)
 
-> [!CAUTION]
-> O exemplo `{"id": 7, "valor": 12.50}` do enunciado está **errado**.
-> O campo correto é `valor_centavos`, inteiro (ex.: `1250`).
-
 ### Formato do bilhete
 
 | Campo | aberto | encerrado | cancelado |
@@ -40,7 +36,7 @@
 | --- | --- | --- |
 | CA2.1 | Bilhete aberto há 90 min | 200, `minutos: 90`, `valor_centavos: 675`, `status: "encerrado"` |
 | CA2.2 | Resposta | Contém `id, placa, entrada, saida, minutos, valor_centavos` |
-| CA2.3 | `valor_centavos` | Sempre inteiro, nunca `675.0` |
+| CA2.3 | `valor_centavos` | Sempre inteiro|
 | CA2.4 | Id inexistente | 404 `bilhete_nao_encontrado` |
 | CA2.5 | Encerrar duas vezes | 409 `bilhete_ja_encerrado` |
 | CA2.6 | Encerrar bilhete cancelado | 409 `bilhete_ja_encerrado` |
